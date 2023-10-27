@@ -1,0 +1,77 @@
+.d-flex {
+    display: flex;
+}
+
+.character-info-container {
+    margin: 0 auto;
+    background-color: white;
+    width: 80vw;
+    height: 60vh;
+    margin-top: 10vh;
+    padding: 1vw;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0.1vw -1vw 0 0 rgba(76, 75, 75, 1), 0.3vw -1vw 0 0 rgba(76, 75, 75, 1), 0.9vw -1vw 0 0 rgba(76, 75, 75, 1), 0.9vw 0.05vw 0 0 rgba(76, 75, 75, 1); /* Sombreado */
+}
+
+.character-name {
+    color: black;
+    font-size: 5vw;
+}
+
+.character-info-spec {
+    align-items: center;
+}
+
+
+.character-pic {
+    width: 30vw;
+    height: 50vh;
+    margin: 1vw;
+    border: solid 0.3vw black;
+}
+
+.character-specie {
+    font-size: 3vw;
+}
+
+.character-gender {
+    font-size: 3vw;
+}
+
+.character-origin-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 45vw; 
+    font-size: 3vw; 
+}
+
+.character-origin-btn  {
+    width: auto;
+    height: auto;
+    background: none;
+    border: 0;
+}
+
+.character-origin-btn:hover {
+    cursor: pointer;
+}
+
+.character-location-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 45vw;
+    font-size: 3vw; 
+}
+
+.character-location-btn  {
+    width: auto;
+    height: auto;
+    background: none;
+    border: 0;
+}
+
+.character-location-btn:hover {
+    cursor: pointer;
+}

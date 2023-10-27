@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'get_schwifty';
+    src: url('get_schwifty.ttf');
+}
+
+.Article-container {
+    display: flex;
+    width: auto;
+    height: fit-content;
+    align-items: center;
+    margin: 3vh auto;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Article-container:hover {
+    transform: scale(1.05);
+}
+
+.Article-container-img {
+    border-radius: 50%;
+}
+
+.Article-container-h3 {
+    margin-left: 2vw;
+    font-family: 'get_schwifty';
+    font-size: 2.6vw;
+    color: rgb(0, 170, 255);
+    letter-spacing: -3px;
+    text-shadow:
+        -2px -1px 0 #00fb00,
+        2px -1px 0 #00fb00,
+        -1px 2px 0 #00fb00,
+        2px 1px 0 #00fb00;
+    text-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+    .Article-container {
+        align-items: center;
+        text-align: center;
+        display: grid;
+        grid-template-rows: auto auto;
+        margin-bottom: 10vh;
+    }
+
+    .Article-container-img {
+        margin: 0 auto;
+    }
+
+    .Article-container-h3 {
+        margin-top: 3vh;
+        font-size: 10vw;
+    }
+}

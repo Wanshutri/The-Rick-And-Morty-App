@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './NavBar.css';
+import  portal from './portal.png'
 
 function NavBarComponent() {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ function NavBarComponent() {
     return (
         <div className='navBar'>
             <a href="/"><div className='navBar-present'>
-                <img className='navBar-present-img' src="https://i.pinimg.com/originals/98/29/21/9829215db6f9210c0ae4e318e854cb1f.png" alt="Logo" />
+                <img className='navBar-present-img' src={portal} alt="Logo" />
                 <h3 className='navBar-present-title'>The Rick And Morty App</h3>
             </div></a>
             
