@@ -14,7 +14,6 @@ function NavBarComponent() {
                 <img className='navBar-present-img' src={portal} alt="Logo" />
                 <h3 className='navBar-present-title'>The Rick And Morty App</h3>
             </div></a>
-            
             <div className={`navBar-menu ${isMenuOpen ? 'mobile-menu active' : 'mobile-menu'}`}>
                 <a href="characters" className="navBar-menu-option">Characters</a>
                 <a href="chapters" className="navBar-menu-option">Chapters</a>
