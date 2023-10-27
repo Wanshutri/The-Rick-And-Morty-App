@@ -19,6 +19,10 @@ body {
     animation: AnimateBG 8s ease infinite;
 }
 
+.navBar a {
+    text-decoration: none;
+}
+
 @-webkit-keyframes AnimateBG {
     0% {
         background-position: 0% 50%;
@@ -110,6 +114,7 @@ body {
         font-size: 5vh;
         margin: 0 auto;
         background: none;
+        margin-right: 2vw;
         border: 0;
         transform: rotate(-90deg);
         transition: transform 0.5s ease;
