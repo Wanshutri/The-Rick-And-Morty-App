@@ -24,18 +24,17 @@
 
 @keyframes moveRandom {
     0% {
-        transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 0) rotate(0deg) scale(1);
     }
 
     50% {
-        transform: translate(-5px, -10px) rotate(-5deg);
+        transform: translate(-5px, -10px) rotate(-5deg) scale(1.03);
     }
 
     100% {
-        transform: translate(10px, 5px) rotate(5deg);
+        transform: translate(10px, 5px) rotate(5deg) scale(0.98);
     }
 }
-
 
 .div-presentation-container-img {
     margin-bottom: 5vh;
@@ -50,7 +49,6 @@
     border-radius: 50%;
     animation: moveRandom 2s ease-in-out infinite alternate;
 }
-
 
 .div-presentation-label {
     font-size: 150%;

@@ -56,23 +56,26 @@ body {
     align-items: center;
 }
 
+@keyframes increase {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .navBar-present-img {
     width: 3vw;
     height: 6vh;
     margin: 1vh;
     background-color: transparent;
-    animation: rotate 4s infinite linear;
+    animation: increase 4s infinite linear alternate;
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 .navBar-present-title {
     font-family: 'get_schwifty';
@@ -147,6 +150,7 @@ body {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.5s ease;
+        z-index: 1;
     }
 
     .navBar-menu.mobile-menu.active {
