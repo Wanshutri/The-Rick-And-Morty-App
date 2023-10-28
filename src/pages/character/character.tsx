@@ -3,12 +3,26 @@ import { useParams } from 'react-router-dom';
 import Background from '../../assets/components/BackgroundComponent/background';
 import NavBarComponent from '../../assets/components/NavBarComponent.tsx/NavBarComponent';
 import './character.css'
-import lupa from './lupa.png'
+
+interface CharacterData {
+    name: string;
+    status: string;
+    species: string;
+    gender: string;
+    origin: {
+        name: string;
+        url: string
+    };
+    location: {
+        name: string;
+    };
+    image: string
+}
 
 const CharacterPage = () => {
     const { id } = useParams();
     const apiUrl = `https://rickandmortyapi.com/api/character/${id}`;
-    const [characterData, setCharacterData] = useState(null);
+    const [characterData, setCharacterData] = useState<CharacterData | null>(null);
 
     useEffect(() => {
         fetch(apiUrl)
@@ -51,10 +65,6 @@ const CharacterPage = () => {
         return null;
     }
 
-
-
-
-
     if (!characterData) {
         return <div></div>;
     }
@@ -79,7 +89,7 @@ const CharacterPage = () => {
                                 <button className='character-origin-btn'>🔍</button>
                             </div>
                             <div className='d-flex character-info-spec'>
-                                <h1 className='character-location-text'>Gender: {characterData.location.name}</h1>
+                                <h1 className='character-location-text'>Location: {characterData.location.name}</h1>
                                 <button className='character-location-btn'>🔍</button>
                             </div>
                         </div>
